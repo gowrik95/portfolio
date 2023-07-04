@@ -95,9 +95,12 @@
   height: 70px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-.about-description{
-  margin-top: 50px;
+.about-description, .work-experience{
+  border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin: 30px;
 }
+
 .about-description-heading{
   text-align: center;
   margin: 20px 0;
@@ -108,9 +111,9 @@
 .about-work{
   display: flex;
 }
-.work-experience{
+/* .work-experience{
   margin-top: 50px;
-}
+} */
 .work-heading{
   text-align: center;
   margin: 20px 0;
@@ -124,7 +127,6 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: left;
 }
 .contact {
@@ -149,6 +151,15 @@
   height: 50px;
   width: 50px;
 }
+.footer{
+  background-color: #2d2e32;
+  padding: 2rem 0;
+  width: 100%;
+}
+.footer-content{
+  color:#f2f2f2;
+  text-align: center;
+}
 
 @keyframes slideInFromLeft {
   0% {
@@ -172,7 +183,10 @@
     float: right;
     display: block;
   }
-
+ 
+  .topnav a.icon:hover{
+    text-decoration: none;
+  }
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
   .topnav.responsive {
@@ -201,5 +215,20 @@
   }
   .skills-list{
     margin: 20px 0;
+  }
+  .logos-list{
+    padding: 0;
+  }
+  .about-work{
+    flex-direction: column;
+  }
+  .about-description, .work-experience{
+    margin: 50px 0;
+  }
+  .about-description-paragh{
+    margin: 0;
+  }
+  .footer-content{
+    font-size: 15px;
   }
 }

@@ -14,10 +14,10 @@
 
 <body>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a class="topnav-item" href="#home" class="active">Home</a>
+    <a class="topnav-item"href="#about">About</a>
+    <a class="topnav-item"href="#contact">Contact</a>
+    <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -36,7 +36,7 @@
   <div class="skillset">
     <p class="skill-heading">TECH STACK</p>
     <div class="logos">
-      <ul>
+      <ul class="logos-list">
         <li class="skills-list col-lg-2 col-4">
           <img class="skill-list-item-image" src="./src/assets/html5.png" title="HTML5" alt="skill-icon">
         </li>
@@ -58,8 +58,8 @@
       </ul>
     </div>
   </div>
- <div class="about-work">
-  <div class="about-description col-5">
+ <div id="about" class="about-work">
+  <div class="about-description col-lg-5">
     <h3 class="about-description-heading">ABOUT ME</h3>
     <h4 class="about-description-heading">A dedicated Front-end Developer based in Toronto, Canada 📍</h4>
     <p class="about-description-paragh">As a Junior Front-End Developer, I possess skills in HTML, CSS, JavaScript,
@@ -69,7 +69,7 @@
       produce outstanding web applications.</p>
   </div>
 
-  <div class="work-experience col-7">
+  <div class="work-experience col-lg-6">
     <h3 class="work-heading">WORK EXPERIENCE</h3>
     <h5>TATA CONSULTANCY SERVICES </h5>
     <div class="experience one">  
@@ -88,7 +88,7 @@
     </div>
   </div>
  </div>
- <div class="contact">
+ <div id="contact" class="contact">
     <div class="contact-me">
       <h2>CONTACT</h2>
     </div>
@@ -108,7 +108,9 @@
         </ul>
       </div>
  </div>
- <div class="footer"></div>
+ <div class="footer">
+  <h3 class="footer-content">Copyright © 2023. All rights are reserved</h3>
+ </div>
   </div>
 </body>
 
