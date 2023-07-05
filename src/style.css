@@ -3,6 +3,10 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
+  /* position: fixed; 
+top: 0;
+width: 100%;
+z-index: 1; */
 }
 
 /* Style the links inside the navigation bar */
@@ -32,7 +36,9 @@
   position: relative;
   overflow: hidden;
 }
-
+.my-photo{
+  width: 100%;
+}
 .text-wrapper {
   position: absolute;
   color: white;
@@ -227,6 +233,12 @@
   }
   .about-description-paragh{
     margin: 0;
+  }
+  .contact-list{
+    padding: 0;
+  }
+  .experience-one, .experience-two, .about-description-paragh{
+    padding:20px 10px
   }
   .footer-content{
     font-size: 15px;
