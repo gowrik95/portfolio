@@ -7,4 +7,14 @@ function myFunction() {
   else {
     x.className = "topnav";
   }
+  
+}
+function checkClickFunc()
+{
+ var checkbox = document.getElementById('darkmode-toggle');
+ let mainContent = document.querySelector('#main_content');
+ if (checkbox.checked == true)
+ {
+  alert("Checkbox is clicked");
+ }
 }
